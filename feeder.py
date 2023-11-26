@@ -19,10 +19,6 @@ def get_news():
         
 
 
-
-
-
-
 def get_news_by_category(category):
     url = f'https://rss.nytimes.com/services/xml/rss/nyt/{category}.xml' 
     d = feedparser.parse(category_url)

@@ -1,20 +1,20 @@
 from cat.mad_hatter.decorators import tool, hook, plugin
 from pydantic import BaseModel
 from datetime import datetime, date
-from ./feeder.py import get_news
+from .feeder import get_news
 
 
 @tool
 def get_latest_news(tool_input, cat):
-    """This tool is useful to gather the latest news."""
-
+    """"use this tool to respond to requests like 'give me good news' ecc.."""
     n = get_news()
-    return str(n)
 
-@hook
-def before_cat_sends_message(message, cat):
+    return cat.llm(
+        f"""
+        These are a list of articles.
+        {print(n)}
 
-    prompt = f'leave only the articles that bring joy: {message["content"]}'
-    message["content"] = cat.llm(prompt)
+        Leave in this list ONLY the articles that bring joy.
+        """
+    )
 
-    return message
