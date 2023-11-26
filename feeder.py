@@ -1,3 +1,5 @@
+import feedparser
+
 CATEGORIES = [
     'Arts',
     'ArtandDesign',

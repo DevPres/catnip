@@ -1,5 +1,4 @@
 from cat.mad_hatter.decorators import tool, hook, plugin
-from pydantic import BaseModel
 from datetime import datetime, date
 from .feeder import get_news
 
