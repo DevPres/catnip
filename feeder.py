@@ -23,7 +23,7 @@ def get_news():
 
 def get_news_by_category(category):
     url = f'https://rss.nytimes.com/services/xml/rss/nyt/{category}.xml' 
-    d = feedparser.parse(category_url)
+    d = feedparser.parse(url)
     news_list = []
     for news in d['entries']:
         news_list.append({
