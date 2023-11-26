@@ -14,7 +14,8 @@ CATEGORIES = [
 def get_news():
     news_list = []
     for category in CATEGORIES:
-        news_list.append(*get_news_by_category(category))
+        for news in get_news_by_category(category)
+            news_list.append(news)
 
     return news_list
 
