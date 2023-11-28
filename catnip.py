@@ -7,7 +7,7 @@ from .feeder import get_news
 def get_latest_news(tool_input, cat):
     """"use this tool to respond to requests like 'give me good news'. Input is always none """
     try:
-        n = str(get_news())
+        n = get_news()
         return n
     except Exception as e:
         print(e)
@@ -18,7 +18,7 @@ def get_latest_news(tool_input, cat):
 def before_cat_sends_message(final_output, cat):
     
     prompt =f'Filter from the list all message that are not a extremely POSITIVE, and format in a pointed list'
-        
+    final_output["content"] = cat.llm(prompt);     
     
-    return cat.llm(prompt)
+    return final_output
 
