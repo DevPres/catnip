@@ -17,10 +17,13 @@ def get_latest_news(tool_input, cat):
 
 @hook(priority=1)
 def before_cat_sends_message(final_output, cat):
-    prompt = f'This is the news list: {final_output["content"]}. \
-    Filter from the list the news that have POSITIVE sentiment. \
-    ALWAYS response with all the articles filtered. \
-    format response as bullet pointed list.'
-    final_output["content"] = cat.llm(prompt)
+    print(final_output['why']['intermediate_steps'])
+    if 'get_latest_news' in final_output['why']['intermediate_steps']:
+        prompt = f'This is the news list: {final_output["content"]}. \
+        Filter from the list the news that have POSITIVE sentiment. \
+        ALWAYS response with all the articles filtered. \
+        format response as bullet pointed list.'
+        final_output["content"] = cat.llm(prompt)
 
-    return final_output
+        return final_output
+    return final_output["content"]
