@@ -17,7 +17,6 @@ def get_latest_news(tool_input, cat):
 @hook(priority=1)
 def before_cat_sends_message(final_output, cat):
     
-    print(final_output)
     prompt =f"This is the list: {final_output} Filter from the list all message that are not a extremely POSITIVE, and format in a pointed list \n"
         
     
