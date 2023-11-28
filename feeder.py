@@ -10,7 +10,7 @@ def get_news():
                 news_list.append(category_news[i])
             except IndexError:
                 pass
-
+    print(news_list)
     return news_list
 
 
