@@ -1,10 +1,10 @@
 {
     "name": "Catnip",
-    "version": "0.0.1",
-    "description": "Description of catnip.",
-    "author_name": "Me",
-    "author_url": "https://mywebsite.me",
-    "plugin_url": "https://github.com/my_name/catnip",
+    "version": "0.0.2",
+    "description": "Mood made goodby good news!.",
+    "author_name": "Dario Presutti",
+    "author_url": "https://github.com/DevPres",
+    "plugin_url": "https://github.com/DevPres/catnip",
     "tags": "cat, template, example",
-    "thumb": "https://raw.githubusercontent.com/my_repo_path/catnip.png"
+    "thumb": "https://github.com/DevPres/catnip/blob/main/catnip.jpeg"
 }
