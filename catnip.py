@@ -9,18 +9,12 @@ def get_latest_news(tool_input, cat):
 
     try:
         n = get_news()
-        return str(n)
+        prompt = f'This is the news list: {str(n)}. \
+        Filter from the list all article that are extremely POSITIVE. \
+        ALWAYS response with all the article filtered. \
+        format response as bullet pointed list'
+
+        return cat.llm(prompt)
     except Exception as e:
         print(e)
         return "Oops, nothing good today!"
-
-
-@hook(priority=1)
-def before_cat_sends_message(final_output, cat):
-    prompt = f'This is the news list: {final_output["content"]}. \
-    Filter from the list all article that are extremely POSITIVE. \
-    ALWAYS response with all the article filtered. \
-    format response as bullet pointed list'
-    final_output["content"] = cat.llm(prompt)
-
-    return final_output
