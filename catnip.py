@@ -17,7 +17,6 @@ def get_latest_news(tool_input, cat):
 
 @hook(priority=1)
 def before_cat_sends_message(final_output, cat):
-    print(final_output['why']['intermediate_steps'])
     if 'get_latest_news' in final_output['why']['intermediate_steps']:
         prompt = f'This is the news list: {final_output["content"]}. \
         Filter from the list the news that have POSITIVE sentiment. \
