@@ -18,8 +18,8 @@ def get_latest_news(tool_input, cat):
 def before_cat_sends_message(final_output, cat):
     
     print(final_output)
-    prompt ="Filter from the list all message that are not a extremely POSITIVE \n" +
-        f"This is the list: {final_output}"
+    prompt =f"This is the list: {final_output} Filter from the list all message that are not a extremely POSITIVE \n"
+        
     
     return cat.llm(prompt)
 
