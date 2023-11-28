@@ -23,4 +23,4 @@ def get_news_by_category(category):
     return news_list
 
 
-CATEGORIES = ["Climate", "Space", "Technology", "Science" "Arts", "Music"]
+CATEGORIES = ["Climate", "Space", "Technology", "Science", "Arts", "Music"]
