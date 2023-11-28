@@ -22,7 +22,7 @@ def before_cat_sends_message(final_output, cat):
         Filter from the list the news that have POSITIVE sentiment. \
         ALWAYS response with multiple news. \
         ALWAYS prefer news on cat \
-        ALWAYS format response as bullet pointed list.'
+        ALWAYS format response as BULLET POINTED list.'
         final_output["content"] = cat.llm(prompt)
 
         return final_output
