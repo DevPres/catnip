@@ -19,8 +19,7 @@ def get_latest_news(tool_input, cat):
 def before_cat_sends_message(final_output, cat):
     prompt = f'This is the news list: {final_output["content"]}. \
     Filter from the list all article that are extremely POSITIVE. \
-    format response as bullet pointed list, keeping the link to the articles. \
-    if you can response with at least 3 articles.'
+    format response as bullet pointed list'
     final_output["content"] = cat.llm(prompt)
 
     return final_output
