@@ -5,7 +5,7 @@ from .feeder import get_news
 
 @tool
 def get_latest_news(tool_input, cat):
-    """"use this tool to respond to requests like 'give me good news' ecc.."""
+    """"use this tool to respond to requests like 'give me good news'. Input is always none """
     try:
         n = get_news()
         return n
@@ -17,7 +17,7 @@ def get_latest_news(tool_input, cat):
 @hook(priority=1)
 def before_cat_sends_message(final_output, cat):
     
-    prompt =f'This is the list: {final_output["content"]} Filter from the list all message that are not a extremely POSITIVE, and format in a pointed list'
+    prompt =f'Filter from the list all message that are not a extremely POSITIVE, and format in a pointed list'
         
     
     return cat.llm(prompt)
