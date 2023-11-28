@@ -20,9 +20,8 @@ def before_cat_sends_message(final_output, cat):
     if final_output['why']['intermediate_steps'] is not None and 'get_latest_news' in final_output['why']['intermediate_steps']:
         prompt = f'This is the news list: {final_output["content"]}. \
         Filter from the list the news that have POSITIVE sentiment. \
-        ALWAYS response with multiple news. \
-        ALWAYS prefer news on cat \
-        ALWAYS format response as BULLET POINTED list.'
+        ALWAYS response with multiple news. '
+
         final_output["content"] = cat.llm(prompt)
 
         return final_output

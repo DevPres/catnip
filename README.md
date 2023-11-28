@@ -1,26 +1,16 @@
 # Catnip
 
-[![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)  
-[![Awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=Awesome+plugin&color=000000&style=for-the-badge&logo=cheshire_cat_ai)](https://)  
-[![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=F4F4F5&style=for-the-badge&logo=cheshire_cat_black)](https://)
+<!-- [![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)   -->
+Like catnip for cats, this plugin aims to improve the mood of its users through good news from around the world.
 
-Write here all the useful information about your plugin.
-
-This repository is the template to automate the release of official Cheshire Cat AI plugins. 
+The news is taken from the New York Times feed and LLM chose the more positive.
 
 ## Usage
 
-1. Create a new repository clicking on the `Use this template` button.
-2. Clone your new repo directly in the Cat's `plugins` folder.
-3. Run the `setup.py` script:
-```bash
-python setup.py
-```
-The script will prompt you to write the name of your plugin and make an initial setup setting the name in the files.
+Active the plugin in the plugins tab, and ask the cat for good news!
 
-4. Start developing!
+## Contribute
 
-> **Important**
-> A new release of your plugin is triggered every time you set a new `version` in the `plugin.json` file.
-> Please, remember to set it correctly every time to want to release an update.
+This is my first plugin for an LLM, and these are my first python's lines of code. I have to learn a lot!
+So feel free to contribute to the repo and teach me something usefull!
 
