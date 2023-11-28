@@ -20,7 +20,8 @@ def before_cat_sends_message(final_output, cat):
     if 'get_latest_news' in final_output['why']['intermediate_steps']:
         prompt = f'This is the news list: {final_output["content"]}. \
         Filter from the list the news that have POSITIVE sentiment. \
-        ALWAYS response with all the articles filtered. \
+        ALWAYS response with multiple news. \
+        ALWAYS prefer news on cat \
         ALWAYS format response as bullet pointed list.'
         final_output["content"] = cat.llm(prompt)
 
