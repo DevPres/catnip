@@ -21,7 +21,7 @@ def before_cat_sends_message(final_output, cat):
         prompt = f'This is the news list: {final_output["content"]}. \
         Filter from the list the news that have POSITIVE sentiment. \
         ALWAYS response with all the articles filtered. \
-        format response as bullet pointed list.'
+        ALWAYS format response as bullet pointed list.'
         final_output["content"] = cat.llm(prompt)
 
         return final_output
