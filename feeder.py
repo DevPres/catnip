@@ -2,7 +2,6 @@ import feedparser
 
 CATEGORIES = [
     'Arts',
-    'ArtandDesign',
     'Music',
     'Theater',
     'Climate',
