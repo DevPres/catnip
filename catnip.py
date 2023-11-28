@@ -7,7 +7,7 @@ from .feeder import get_news
 def get_latest_news(tool_input, cat):
     """"use this tool to respond to requests like 'give me good news'. Input is always none """
     try:
-        n = get_news()
+        n = str(get_news())
         return n
     except Exception as e:
         print(e)
