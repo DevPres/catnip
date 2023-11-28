@@ -1,12 +1,5 @@
 import feedparser
 
-CATEGORIES = [
-    'Arts',
-    'Climate',
-    'Space',
-    'Technology',
-    'Science'
-]
 
 def get_news():
     news_list = []
@@ -25,4 +18,12 @@ def get_news_by_category(category):
             'Title': news['title'],
         })
     return news_list
+
+CATEGORIES = [
+    'Arts',
+    'Climate',
+    'Space',
+    'Technology',
+    'Science'
+]
 

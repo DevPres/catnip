@@ -17,7 +17,7 @@ def get_latest_news(tool_input, cat):
 @hook(priority=1)
 def before_cat_sends_message(final_output, cat):
     
-    prompt =f'This is the news list: {final_output["content"]}. Filter from the list all message that are extremely POSITIVE, and format in a pointed list'
+    prompt =f'This is the news list: {final_output["content"]}. Filter from the list all message that are extremely POSITIVE, and format as bullet pointed list'
     final_output["content"] = cat.llm(prompt);     
     
     return final_output
