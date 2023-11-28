@@ -26,4 +26,4 @@ def before_cat_sends_message(final_output, cat):
         final_output["content"] = cat.llm(prompt)
 
         return final_output
-    return final_output["content"]
+    return final_output
