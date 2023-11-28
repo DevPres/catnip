@@ -21,7 +21,7 @@ def before_cat_sends_message(final_output, cat):
 
     prompt = f'This is the news list: {final_output["content"]}. \
     Filter from the list all message that are extremely POSITIVE, \
-    format as bullet pointed list'
+    format as bullet pointed list. Keep the link in the reply'
     final_output["content"] = cat.llm(prompt)
 
     return final_output
