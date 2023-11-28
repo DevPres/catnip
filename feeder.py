@@ -26,9 +26,6 @@ def get_news_by_category(category):
     for news in d['entries']:
         news_list.append({
             'Title': news['title'],
-            'Summary': news['summary'],
-            'Link': news['links'][0]['href'],
-            'Published': news['published']
         })
     return news_list
 
