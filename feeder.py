@@ -4,9 +4,12 @@ import feedparser
 def get_news():
     news_list = []
     for category in CATEGORIES:
-        catgeory_news = get_news_by_category(category)
+        category_news = get_news_by_category(category)
         for i in range(5):
-            news_list.append(catgeory_news[i])
+            try:
+                news_list.append(category_news[i])
+            except IndexError:
+                pass
 
     return news_list
 
