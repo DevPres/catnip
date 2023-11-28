@@ -5,7 +5,7 @@ def get_news():
     news_list = []
     for category in CATEGORIES:
         category_news = get_news_by_category(category)
-        for i in range(5):
+        for i in range(7):
             try:
                 news_list.append(category_news[i])
             except IndexError:
@@ -21,7 +21,6 @@ def get_news_by_category(category):
     for news in d["entries"]:
         news_list.append({
             "Description": news["description"],
-            "Link": news["link"]
         })
     return news_list
 
