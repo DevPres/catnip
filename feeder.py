@@ -20,7 +20,6 @@ def get_news_by_category(category):
     return news_list
 
 CATEGORIES = [
-    'Arts',
     'Climate',
     'Space',
     'Technology',
