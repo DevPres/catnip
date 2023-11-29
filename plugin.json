@@ -1,10 +1,10 @@
 {
     "name": "Catnip",
-    "version": "0.0.2",
-    "description": "Mood made goodby good news!.",
+    "version": "0.0.3",
+    "description": "Mood made good by good news!",
     "author_name": "Dario Presutti",
     "author_url": "https://github.com/DevPres",
     "plugin_url": "https://github.com/DevPres/catnip",
-    "tags": "cat, template, example",
+    "tags": "cat, catnip, happines",
     "thumb": "https://raw.githubusercontent.com/DevPres/catnip/main/catnip.jpeg"
 }
