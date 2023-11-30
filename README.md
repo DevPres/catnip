@@ -1,4 +1,4 @@
-<!-- [![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)   -->
+[![awesome plugin](https://custom-icon-badges.demolab.com/static/v1?label=&message=awesome+plugin&color=383938&style=for-the-badge&logo=cheshire_cat_ai)](https://)
 
 ![catnip](https://github.com/DevPres/catnip/blob/main/catnip.jpeg)
 
