@@ -8,11 +8,11 @@ Catin is a plugin for the amazing [Cat](https://github.com/cheshire-cat-ai) :kis
 
 Like catnip for cats, this plugin aims to improve the mood of its users through good news from around the world. The news is taken from the New York Times feed, and LLM chooses the more positive ones
 
+I took inspiration from [this awesome plugin](https://github.com/AndreaPesce2002/the-latest-news-in-wonderland)
+
 ## Usage
 
 Active the plugin in the plugins tab, and ask the cat for good news!
-
-The plugin has been tested only with ChatGPT as the language model.
 
 ## Contribute
 
