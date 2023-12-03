@@ -23,5 +23,6 @@ def before_cat_sends_message(final_output, cat):
         ALWAYS response with multiple news. '
 
         final_output["content"] = cat.llm(prompt)
+        return final_output
 
     return final_output
